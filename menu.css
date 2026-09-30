@@ -1,0 +1,33 @@
+.dropdown{
+    display:inline-block;/*dropdown menu only appears when the pointer is on the button. without it, it will appear when the cursor is near the button*/
+}
+.dropdown button{
+    background-color: cornflowerblue;
+    min-width: 100px;
+    color: white; /*font colour*/
+    padding: 10px 15px; /*10 px by 15px*/
+    border: none;
+    cursor: pointer; /*cursor changes to pointer on hover*/
+}
+.dropdown a{/*'a' because we want to find <a> tags in html :D*/
+    display: block;/*starts on a new line and takes up the whole width, so we can click on the block and not just the text*/
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;/*to hide the dropdown content before hovering*/
+    position: absolute; /*moves along with page scrolling (fixed means button moves but dropdown menu float and detached*/
+    background-color: pink;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;/*horizontal positioning, vertical, level of blur, colour*/
+}
+.dropdown:hover .content{
+    display: block;/*dropdown content shows over hover*/
+}
+.dropdown:hover .button{
+    background-color:aqua/*button colour changes over hover*/
+}
+.dropdown a:hover{
+    background-color:darkorange;/*colour changes over hover for a elements*/
+}
